@@ -5,15 +5,8 @@ import { FiDroplet } from 'react-icons/fi';
 import { ImMeter } from 'react-icons/im';
 import { LuEye, LuSunrise, LuSunset } from 'react-icons/lu';
 import { MdAir } from 'react-icons/md';
-
-export interface WeatherDetailProps {
-    visibility: string;
-    humidity: string;
-    windSpeed: string;
-    airPressure: string;
-    sunrise: string;
-    sunset: string;
-}
+import SingeDayWeatherDetailProps from '@/interfaces/SingeDayWeatherDetailProps';
+import WeatherDetailProps from '@/interfaces/WeatherDetailProps';
 
 export default function WeatherDetails(props: WeatherDetailProps) {
     const {
@@ -59,12 +52,6 @@ export default function WeatherDetails(props: WeatherDetailProps) {
         />
     </>
   )
-}
-
-export interface SingeDayWeatherDetailProps {
-    information: string;
-    icon: React.ReactNode;
-    value: string;
 }
 
 function SingeDayWeatherDetail(props: SingeDayWeatherDetailProps) {
