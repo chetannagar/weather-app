@@ -10,7 +10,7 @@ import axios from "axios";
 import { format, parseISO } from "date-fns";
 import Image from "next/image";
 import { useQuery } from "react-query";
-import WeatherData from "@/interfaces/WeatherData";
+import WeatherData from "@/interfaces/JSON/WeatherData";
 
 // https://api.openweathermap.org/data/2.5/forecast?q=Melbourne,au&APPID=${process.env.NEXT_PUBLIC_WEATHER_KEY}&cnt=2
 
